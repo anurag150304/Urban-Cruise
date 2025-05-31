@@ -27,11 +27,11 @@ export const Content = () => {
                 </div>
 
                 {/* Text Content Side */}
-                <div className="w-full lg:w-1/2 flex flex-col justify-center items-start gap-5">
+                <div className="w-full lg:w-1/2 flex flex-col justify-start items-start gap-5 max-[431px]:items-center">
                     <span className="text-sm font-medium opacity-70 border-b border-[#000000b5]">
                         ABOUT URBAN CRUISE
                     </span>
-                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold">
+                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold max-[431px]:text-center">
                         Welcome to the <span className="text-[#e02454]"><br className="hidden sm:block" />Bus rental</span> Services
                     </h1>
                     <p className="opacity-70 leading-6 text-sm sm:text-base">
@@ -41,9 +41,9 @@ export const Content = () => {
                     {/* Features & Button */}
                     <div className="flex flex-col sm:flex-row justify-start items-start sm:items-center gap-6 sm:gap-10 w-full">
                         <ul className="flex flex-col justify-center items-start gap-3 list-disc marker:text-[#e02454] opacity-80 text-sm sm:text-base">
-                            <li className="hover:text-black">We don’t just plan trips; we craft journeys that become stories.</li>
-                            <li className="hover:text-black">Wherever you dream to go, we’re already paving the way.</li>
-                            <li className="hover:text-black">More than destinations — we bring you the joy of discovery.</li>
+                            <li className="hover:text-black max-[431px]:ml-4">We don’t just plan trips; we craft journeys that become stories.</li>
+                            <li className="hover:text-black max-[431px]:ml-4">Wherever you dream to go, we’re already paving the way.</li>
+                            <li className="hover:text-black max-[431px]:ml-4">More than destinations — we bring you the joy of discovery.</li>
                         </ul>
 
                         <a
@@ -61,7 +61,7 @@ export const Content = () => {
 
             <section className='flex flex-col justify-start items-center gap-5 p-4 mb-10 w-full' style={{ backgroundImage: `url(${background})` }}>
                 <span className="text-sm font-medium opacity-70 border-b-1 border-b-[#000000b5]">HOW IT WORKS</span>
-                <h1 className="text-[2.50rem] font-semibold text-center max-[425px]:text-3xl">Book <span className="text-[#e02454]">Your Vehicles</span><br /> In 3 Steps</h1>
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center">Book <span className="text-[#e02454]">Your Vehicles</span><br /> In 3 Steps</h1>
                 <div className="flex justify-between items-center gap-6 mb-20 max-[1200px]:flex-col max-[1200px]:gap-15 max-[1200px]:mb-0">
                     <motion.div
                         className="h-64 relative cursor-pointer rounded"

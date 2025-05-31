@@ -107,8 +107,8 @@ export function ImagesCarousel() {
             </CarouselContent>
 
             {/* Navigation */}
-            <CarouselPrevious onClick={() => setActiveIndex((prev) => (prev - 1 + images.current.length) % images.current.length)} />
-            <CarouselNext onClick={() => setActiveIndex((prev) => (prev + 1) % images.current.length)} />
+            <CarouselPrevious className="max-[431px]:hidden" onClick={() => setActiveIndex((prev) => (prev - 1 + images.current.length) % images.current.length)} />
+            <CarouselNext className="max-[431px]:hidden" onClick={() => setActiveIndex((prev) => (prev + 1) % images.current.length)} />
 
             {/* Dots */}
             <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-2 z-40">
