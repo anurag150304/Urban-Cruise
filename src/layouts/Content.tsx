@@ -16,31 +16,53 @@ export const Content = () => {
     return (
         <main className="flex flex-col justify-start items-center text-[#002e51]">
             <ImagesCarousel />
-            <section className="w-full flex justify-center items-center p-4 gap-20 my-10">
-                <div className="w-1/2">
-                    <img src={section_img} alt="section.png" className="h-96 w-full object-cover rounded-xl" />
+            <section className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-20 p-6 my-10">
+                {/* Image Side */}
+                <div className="w-full lg:w-1/2">
+                    <img
+                        src={section_img}
+                        alt="section.png"
+                        className="w-full object-cover rounded-xl h-96 max-[431px]:h-56"
+                    />
                 </div>
-                <div className="w-1/2 flex flex-col justify-center items-start gap-5 pr-15">
-                    <span className="text-sm font-medium opacity-70 border-b-1 border-b-[#000000b5]">ABOUT URBAN CRUISE</span>
-                    <h1 className="text-5xl font-semibold">Welcome to the <span className="text-[#e02454]"><br />Bus rental</span> Services</h1>
-                    <p className="opacity-70 leading-6">Urban Cruise is a One Stop Solution for hiring Car, SUV, Tempo Traveller, MiniBus & Luxury Bus on rent for all your Travel needs in We are available in 7 Cities of India- Mumbai, Thane, Pune, Delhi, Noida, Gurugram, Gaziabad.</p>
-                    <div className="flex justify-center items-center gap-10">
-                        <ul className="flex flex-col justify-center items-start gap-4 list-disc marker:text-[#e02454] opacity-70">
-                            <li className="hover:text-black opacity-100">We don’t just plan trips; we craft journeys that become stories.</li>
-                            <li className="hover:text-black opacity-100">Wherever you dream to go, we’re already paving the way.</li>
-                            <li className="hover:text-black opacity-100">More than destinations — we bring you the joy of discovery.</li>
+
+                {/* Text Content Side */}
+                <div className="w-full lg:w-1/2 flex flex-col justify-center items-start gap-5">
+                    <span className="text-sm font-medium opacity-70 border-b border-[#000000b5]">
+                        ABOUT URBAN CRUISE
+                    </span>
+                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold">
+                        Welcome to the <span className="text-[#e02454]"><br className="hidden sm:block" />Bus rental</span> Services
+                    </h1>
+                    <p className="opacity-70 leading-6 text-sm sm:text-base">
+                        Urban Cruise is a One Stop Solution for hiring Car, SUV, Tempo Traveller, MiniBus & Luxury Bus on rent for all your travel needs. We are available in 7 cities of India — Mumbai, Thane, Pune, Delhi, Noida, Gurugram, Ghaziabad.
+                    </p>
+
+                    {/* Features & Button */}
+                    <div className="flex flex-col sm:flex-row justify-start items-start sm:items-center gap-6 sm:gap-10 w-full">
+                        <ul className="flex flex-col justify-center items-start gap-3 list-disc marker:text-[#e02454] opacity-80 text-sm sm:text-base">
+                            <li className="hover:text-black">We don’t just plan trips; we craft journeys that become stories.</li>
+                            <li className="hover:text-black">Wherever you dream to go, we’re already paving the way.</li>
+                            <li className="hover:text-black">More than destinations — we bring you the joy of discovery.</li>
                         </ul>
-                        <a href="https://www.youtube.com/watch?v=yrUUVpiBL_Y" className="bg-[#003a66] text-white w-fit py-5 px-3 rounded-sm flex flex-col justify-center items-center gap-4 cursor-pointer">
-                            <div className="flex justify-center items-center border-b-1 border-b-[#ffffff76] w-[70%] pb-3"><FaPlay className="text-[#e02454] text-xl" /></div>
-                            <span className="text-center text-sm font-semibold">Watch the Video</span>
+
+                        <a
+                            href="https://www.youtube.com/watch?v=yrUUVpiBL_Y"
+                            className="bg-[#003a66] text-white py-4 px-5 rounded-md flex flex-col justify-center items-center gap-2 text-sm font-semibold hover:bg-[#002647] transition max-[431px]:self-center"
+                        >
+                            <div className="flex justify-center items-center border-b border-[#ffffff76] w-[70%] pb-2">
+                                <FaPlay className="text-[#e02454] text-lg" />
+                            </div>
+                            <span className="text-center">Watch the Video</span>
                         </a>
                     </div>
                 </div>
             </section>
-            <section className={`flex flex-col justify-start items-center gap-5 p-4 mb-10 w-full`} style={{ backgroundImage: `url(${background})` }}>
+
+            <section className='flex flex-col justify-start items-center gap-5 p-4 mb-10 w-full' style={{ backgroundImage: `url(${background})` }}>
                 <span className="text-sm font-medium opacity-70 border-b-1 border-b-[#000000b5]">HOW IT WORKS</span>
                 <h1 className="text-[2.50rem] font-semibold text-center">Book <span className="text-[#e02454]">Your Vehicles</span><br /> In 3 Steps</h1>
-                <div className="flex justify-between items-center gap-6 mb-20">
+                <div className="flex justify-between items-center gap-6 mb-20 max-[1200px]:flex-col max-[1200px]:gap-15 max-[1200px]:mb-0">
                     <motion.div
                         className="h-64 relative cursor-pointer rounded"
                         initial="initial"
