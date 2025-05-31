@@ -4,7 +4,7 @@ import { FaFacebookSquare, FaInstagram, FaLinkedin, FaYoutube } from "react-icon
 
 export const Footer = () => {
     return (
-        <footer className="bg-[#003a66] text-white pt-10 px-4 sm:px-8 md:px-12 lg:px-16">
+        <footer className="bg-[#003a66] text-white relative pt-10 px-4 sm:px-8 md:px-12 lg:px-16 max-w-[1500px] min-[1500px]:left-1/2 min-[1500px]:-translate-x-1/2">
             <div className="flex flex-wrap justify-between gap-10 pb-10">
                 {/* Left Logo + Info */}
                 <div className="w-full md:w-[35%] flex flex-col items-center md:items-start gap-6">

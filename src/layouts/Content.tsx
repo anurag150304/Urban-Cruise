@@ -14,7 +14,7 @@ export const Content = () => {
     const [isHovered3, setIsHovered3] = useState<boolean>(false);
 
     return (
-        <main className="flex flex-col justify-start items-center text-[#002e51]">
+        <main className="bg-white relative flex flex-col justify-start items-center text-[#002e51] max-w-[1500px] min-[1500px]:left-1/2 min-[1500px]:-translate-x-1/2">
             <ImagesCarousel />
             <section className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-20 p-6 my-10">
                 {/* Image Side */}
@@ -61,7 +61,7 @@ export const Content = () => {
 
             <section className='flex flex-col justify-start items-center gap-5 p-4 mb-10 w-full' style={{ backgroundImage: `url(${background})` }}>
                 <span className="text-sm font-medium opacity-70 border-b-1 border-b-[#000000b5]">HOW IT WORKS</span>
-                <h1 className="text-[2.50rem] font-semibold text-center">Book <span className="text-[#e02454]">Your Vehicles</span><br /> In 3 Steps</h1>
+                <h1 className="text-[2.50rem] font-semibold text-center max-[425px]:text-3xl">Book <span className="text-[#e02454]">Your Vehicles</span><br /> In 3 Steps</h1>
                 <div className="flex justify-between items-center gap-6 mb-20 max-[1200px]:flex-col max-[1200px]:gap-15 max-[1200px]:mb-0">
                     <motion.div
                         className="h-64 relative cursor-pointer rounded"

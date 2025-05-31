@@ -13,7 +13,7 @@ export const Header = () => {
     return (
         <>
             {/* Desktop Header - Top Info Bar */}
-            <div className="hidden min-[1200px]:flex flex-col justify-start shadow-md">
+            <div className="hidden min-[1200px]:flex relative flex-col justify-start shadow-md max-w-[1500px] min-[1500px]:left-1/2 min-[1500px]:-translate-x-1/2">
                 <div className="bg-[#003a66] text-white py-3.5 px-20 text-sm flex justify-between items-center">
                     <ul className="flex justify-center items-center gap-9 list-disc">
                         <li><span className="text-[#e02454]">Email : </span><a>delhi@urbancruise.in</a></li>
@@ -29,7 +29,7 @@ export const Header = () => {
             </div>
 
             {/* Desktop Sticky Navbar */}
-            <nav className="hidden min-[1200px]:flex sticky top-0 bg-white z-50 shadow-md py-3 px-20 justify-between items-center">
+            <nav className="hidden min-[1200px]:flex sticky top-0 bg-white z-50 shadow-md py-3 px-20 justify-between items-center max-w-[1500px] min-[1500px]:left-1/2 min-[1500px]:-translate-x-[35.30%]">
                 <a href="/">
                     <img src={logo} alt="logo.png" className="w-44" />
                 </a>
@@ -46,7 +46,7 @@ export const Header = () => {
             </nav>
 
             {/* Mobile Header */}
-            <header className="hidden max-[1200px]:flex justify-between items-center py-2 px-9 shadow-md">
+            <header className="hidden max-[1200px]:flex justify-between items-center py-2 px-9 shadow-md sticky top-0 z-50 bg-white w-full">
                 <a href="/">
                     <img src={logo} alt="logo.png" className="w-40" />
                 </a>
