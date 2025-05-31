@@ -19,7 +19,7 @@ export const Header = () => {
                         <li><span className="text-[#e02454]">Email : </span><a>delhi@urbancruise.in</a></li>
                         <li><span className="text-[#e02454]">Call now : </span><span>+000 723 123 21</span></li>
                     </ul>
-                    <ul className="list-disc flex justify-center items-center gap-9">
+                    <ul className="list-disc marker:text-[#e02454] flex justify-center items-center gap-9">
                         <li><a href="/instagram">Instagram</a></li>
                         <li><a href="/facebook">Facebook</a></li>
                         <li><a href="/twitter">Twitter</a></li>
