@@ -59,7 +59,7 @@ export const Content = () => {
                 </div>
             </section>
 
-            <section className='flex flex-col justify-start items-center gap-5 p-4 mb-10 w-full' style={{ backgroundImage: `url(${background})` }}>
+            <section className='flex flex-col justify-start items-center gap-5 p-4 mb-10 w-full bg-cover' style={{ backgroundImage: `url(${background})` }}>
                 <span className="text-sm font-medium opacity-70 border-b-1 border-b-[#000000b5]">HOW IT WORKS</span>
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center">Book <span className="text-[#e02454]">Your Vehicles</span><br /> In 3 Steps</h1>
                 <div className="flex justify-between items-center gap-6 mb-20 max-[1200px]:flex-col max-[1200px]:gap-15 max-[1200px]:mb-0">

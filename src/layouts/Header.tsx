@@ -46,7 +46,7 @@ export const Header = () => {
             </nav>
 
             {/* Mobile Header */}
-            <header className="hidden max-[1200px]:flex justify-between items-center py-2 px-9 shadow-md sticky top-0 z-50 bg-white w-full">
+            <header className="hidden max-[1200px]:flex justify-between items-center py-2 max-[431px]:py-1 px-9 max-[431px]:px-3 shadow-md sticky top-0 z-50 bg-white w-full">
                 <a href="/">
                     <img src={logo} alt="logo.png" className="w-40" />
                 </a>
